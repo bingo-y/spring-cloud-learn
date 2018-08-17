@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: dubbo-provider-demo
+server:
+  port: 9090
+# DemoService service version
+demo:
+  service:
+    version: 1.0.0
+dubbo:
+  application:
+    id: dubbo-provider-demo
+    name: dubbo-provider-demo
+    qos-port: 22222
+    qos-enable: true
+  scan:
+    base-packages: com.bingo.server.service.impl
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 20880
+    status: server
+  registry:
+    id: my-registry
+    address: N/A
